@@ -1,0 +1,25 @@
+// VARIABLES
+@import "variables/colours.scss";
+
+//UTILITIES
+@import "utilities/fonts.scss";
+
+// RESETS
+@import "resets/normalize.scss";
+@import "resets/reset.local.scss";
+@import "resets/responsive.scss";
+@import "resets/typography.scss";
+@import "resets/placeholder.scss";
+
+// COMPONENTS
+@import "components/_nav.scss";
+@import "components/_hero.scss";
+@import "components/_form.scss";
+@import "components/_container.scss";
+@import "components/_sector.scss";
+@import "components/_cookies.scss";
+@import "components/_footer.scss";
+@import "components/_listing.scss";
+@import "components/_filter.scss";
+@import "components/_paginate.scss";
+

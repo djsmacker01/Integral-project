@@ -1,0 +1,12 @@
+.paginate {
+    display: flex;
+    justify-content: space-between;
+    color: var(--beta);
+
+    li {
+        list-style: none;
+        text-decoration: underline;
+        cursor: pointer;
+        font-weight: bolder;
+    }
+}
