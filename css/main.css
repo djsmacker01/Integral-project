@@ -426,85 +426,84 @@ h1 {
 
 .nav {
   display: grid;
-  grid-template-columns: min-content 1fr min-content;
-  grid-template-rows: min-content;
-  background-color: var(--alpha);
-}
-.nav_lblock {
-  grid-row: 1/2;
-  grid-column: 1/2;
-  display: flex;
-  align-items: center;
-  padding: 12rem;
-}
-.nav_icons {
-  grid-column: 3/4;
-  grid-row: 1/2;
-  display: flex;
-  padding: 12rem;
-  align-items: center;
-}
-.nav_icons li {
-  margin-left: 20rem;
-}
-.nav_dropl {
-  grid-row: 2/3;
-  grid-column: 1/-1;
+  margin-top: -10px;
+  padding: 10rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  height: 75rem;
+  box-shadow: 0 0 1px 0;
   background-color: var(--light);
-  display: none;
+}
+.nav_list {
+  display: flex;
+}
+.nav_list li {
+  padding: 15rem;
+}
+.nav_list li :hover {
+  cursor: pointer;
+  text-decoration: underline #00aded;
+}
+.nav_menu-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 5rem;
+  align-items: center;
 }
 .nav_hamburger {
-  margin-right: 10rem;
-}
-.nav_logo {
-  color: var(--light);
-  font-weight: bold;
-}
-.nav_savedcount {
-  position: absolute;
-  padding: 2rem 6rem 3rem 6rem;
-  border-radius: 50%;
-  background-color: var(--alert);
-  color: var(--delta);
-  border: 1px solid var(--delta);
-  font-size: 10px;
-  transform: translate(-5rem, -10rem);
-}
-.nav_toggle:checked ~ .nav_dropl {
-  display: block;
-}
-.nav_toggle:checked ~ .nav_dropl li {
-  padding: 15rem 10rem;
-  border-bottom: 1px var(--delta) solid;
-}
-@media (min-width: 767px) {
-  .nav {
-    grid-template-columns: 1fr min-content minmax(590rem, auto) min-content 1fr;
-  }
-  .nav_lblock {
-    grid-row: 1/2;
-    grid-column: 2/3;
-  }
-  .nav_dropl {
-    grid-row: 1/2;
-    grid-column: 3/4;
-    display: flex;
-    align-items: center;
-    background-color: var(--alpha);
-    color: var(--delta);
-  }
-  .nav_dropl li {
-    margin-left: 50rem;
-  }
-  .nav_icons {
-    grid-column: 4/5;
-    grid-row: 1/2;
-  }
-  .nav_hamburger {
-    display: none;
-  }
+  display: none;
 }
 
+@media only screen and (max-width: 767px) {
+  .nav {
+    display: grid;
+    background-color: var(--light);
+    border: none;
+  }
+  .nav_menu-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr min-content;
+    grid-template-rows: 1fr 1fr;
+    gap: 5rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .nav_hamburger {
+    display: block;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: right;
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 5px;
+    background-color: var(--elements);
+    opacity: 0.9;
+  }
+  .nav_logo {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-left: 20px;
+  }
+  .nav_list {
+    display: none;
+    background-color: var(--light);
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    margin-top: 65rem;
+    margin-left: -10rem;
+  }
+  .nav_toggle {
+    display: none;
+  }
+  .nav_toggle:checked ~ .nav_list {
+    display: block;
+  }
+  .nav_toggle:checked ~ .nav_list li {
+    padding: 15rem 10rem;
+  }
+}
 .hero {
   background-color: var(--light);
   padding: 10rem;
@@ -526,7 +525,7 @@ h1 {
   font-size: 20rem;
   color: var(--gamma);
 }
-@media (min-width: 767px) {
+@media (max-width: 767px) {
   .hero_wrap {
     max-width: 895rem;
     margin: 10rem auto;
@@ -579,7 +578,7 @@ h1 {
   font-weight: bold;
   padding: 8rem;
 }
-@media (min-width: 767px) {
+@media (max-width: 767px) {
   .form {
     display: flex;
     align-items: flex-end;
@@ -666,7 +665,7 @@ h1 {
 .sector__list {
   display: none;
 }
-@media (min-width: 767px) {
+@media (max-width: 767px) {
   .sector h2 {
     font-size: 34rem;
   }
@@ -826,7 +825,7 @@ h1 {
 .listing__delete--alert {
   color: var(--alert);
 }
-@media (min-width: 767px) {
+@media (max-width: 767px) {
   .listing {
     display: grid;
     grid-template-columns: min-content 1fr;
@@ -840,7 +839,7 @@ h1 {
 .filter {
   display: none;
 }
-@media (min-width: 767px) {
+@media (max-width: 767px) {
   .filter {
     display: block;
     margin-right: 30rem;
