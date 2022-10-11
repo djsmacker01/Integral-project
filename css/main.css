@@ -426,16 +426,19 @@ h1 {
 
 .nav {
   display: grid;
-  margin-top: -10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
   padding: 10rem;
-  text-transform: uppercase;
-  font-weight: 300;
   height: 75rem;
   box-shadow: 0 0 1px 0;
   background-color: var(--light);
 }
 .nav_list {
+  grid-column: 2/3;
+  grid-row: 1/2;
   display: flex;
+  width: 324px;
+  text-transform: uppercase;
 }
 .nav_list li {
   padding: 15rem;
@@ -444,12 +447,14 @@ h1 {
   cursor: pointer;
   text-decoration: underline #00aded;
 }
+.nav_toggle {
+  display: none;
+}
 .nav_menu-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 5rem;
-  align-items: center;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  align-self: center;
+  margin-left: 70px;
 }
 .nav_hamburger {
   display: none;
