@@ -1,6 +1,21 @@
 .work{
      max-width: 1095px;
   margin:10rem auto;
+
+  .pr{
+    text-align: center;
+    font-family: monospace;
+    color: var(--elements);
+    font-size: 20px;
+  }
+  article{
+    margin-bottom: 8rem;
+    // padding: 20px;
+
+    p{
+        // padding: 10px;
+    }
+  }
 }
 .lines{
     margin: 20px;
@@ -57,6 +72,5 @@
 .leaf{
    
     margin-right: 50px;
-    color: var(--beta);
-    
+    color: var(--beta);   
 }

@@ -1008,7 +1008,15 @@ h1 {
   max-width: 1095px;
   margin: 10rem auto;
 }
-
+.work .pr {
+  text-align: center;
+  font-family: monospace;
+  color: var(--elements);
+  font-size: 20px;
+}
+.work article {
+  margin-bottom: 8rem;
+}
 .lines {
   margin: 20px;
   width: 100%;
