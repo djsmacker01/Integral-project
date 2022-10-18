@@ -1,31 +1,21 @@
-.content-container {
-  // margin: auto;
-  // position: fixed;
+.content-container{
+  background-color: black;
+  background-blend-mode: hard-light;
 }
 
 .main {
-  background-image: url(/images/bg-welcome.jpg);
+  background-image:  url(/images/bg-welcome.jpg);
+  // background-color: black;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   height: 600px;
   background-color: var(--delta);
   align-items: center;
-  // display: grid;
-  // display: flex;
-  // flex-direction: column;
-  // flex-wrap: wrap;
   padding: 120px;
+ transition:  opacity .3s ease;;
 
-  //   margin-top: 20px;
-  //   justify-content: center;
-  //   top: 0px;
-  //   right: 0px;
-  //   bottom: 0px;
-  //   left: 0px;
-  //   opacity: 0.95;
-
-  // background-attachment: fixed;
+  
 
   &_header {
     h3 {

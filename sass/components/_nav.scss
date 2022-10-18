@@ -1,46 +1,70 @@
-.nav {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  // margin-top: -10px;
-  padding: 10rem;
-  height: 75rem;
-  box-shadow: 0 0 1px 0;
+.header {
+  overflow: hidden;
+  // border: 1px solid blue;
+box-sizing: border-box;
   background-color: var(--light);
-  
-  
+  height: 75px;
+  position: sticky;
+  top: 0;
 
-  &_list {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
+  .nav {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    align-items: center;
+    width: 1100px;
+    margin: auto;
+    padding: 10px;
+  }
+  .nav img {
+    // border: 1px solid green;
+    width: 160px;
+    height: 40px;
+    margin-left: -30px;
+  }
+
+  .nav ul li a {
+    padding: 4.5rem;
+    font-weight: bold;
+  }
+  .nav ul li {
+    padding: 4.5rem;
+    font-weight: bold;
+  }
+
+  .nav ul {
+    list-style: none;
     display: flex;
-    width: 324px;
+    justify-content: space-between;
     text-transform: uppercase;
-
+    // border: 1px solid red;
     li {
+      // display: flex;
+      // flex-direction: column;
       padding: 15rem;
       :hover {
         cursor: pointer;
         text-decoration: underline #00aded;
       }
     }
-  }
 
-  &_toggle {
-    display: none;
-  }
-  &_menu-list {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    align-self: center;
-    margin-left: 70px;
-  }
-  &_hamburger {
-    display: none;
-    // margin-top: 10rem;
+    &_toggle {
+      display: none;
+    }
+
+    &_hamburger {
+      display: none;
+      border: 1px solid red;
+      // margin-top: 10rem;
+    }
+    &_logo {
+      width: 120px;
+      height: auto;
+      border: 1px solid green;
+      padding: 15px;
+      // margin-left: -70px;
+    }
   }
 }
-
 @media only screen and (max-width: 767px) {
   .nav {
     display: grid;
@@ -52,13 +76,13 @@
     // border: 1px solid var(--alert);
     // width: 100%;
 
-    &_menu-list {
-      display: grid;
-      grid-template-columns: 1fr 1fr min-content;
-      grid-template-rows: 1fr 1fr;
-      gap: 5rem;
-      margin-top: 10px;
-      margin-bottom: 20px;
+    &_menu {
+      // display: grid;
+      // grid-template-columns: 1fr 1fr min-content;
+      // grid-template-rows: 1fr 1fr;
+      // gap: 5rem;
+      // margin-top: 10px;
+      // margin-bottom: 20px;
 
       // justify-content: space-around;
       // padding: 6px;
